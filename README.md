@@ -29,7 +29,7 @@ The basic setup is as follows:
 
 4. Run `source *-openrc.sh`.
 
-5. Review `example.tfvars` file in the repo and change some of the variables' values as per your settings i.e. quantity, keypair-name, keypair-path, secgroup, etc.
+5. Review `example.tfvars` file in the repo and change some of the local variables' values as per your settings i.e. quantity, keypair-name, keypair-path, secgroup, etc.
 
 6. Initalize Terraform in the repo with `terraform init`.
 
