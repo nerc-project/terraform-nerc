@@ -47,10 +47,9 @@ The basic setup is as follows:
 
 You can download the environment file with the credentials from the OpenStack dashboard.
 
-    1. Log in to the [NERC's OpenStack dashboard](https://stack.nerc.mghpcc.org), choose the project for which you want
-        to download the OpenStack RC file, and click **"Access & Security"**.
+- Log in to the [NERC's OpenStack dashboard](https://stack.nerc.mghpcc.org), choose the project for which you want to download the OpenStack RC file, and click **"Access & Security"**.
 
-    2. Click **"Download OpenStack RC File"** and save the file.
+- Click **"Download OpenStack RC File"** and save the file.
 
 Then, source your downloaded **OpenStack RC File**:
 
