@@ -47,9 +47,15 @@ The basic setup is as follows:
 
 You can download the environment file with the credentials from the OpenStack dashboard.
 
-- Log in to the [NERC's OpenStack dashboard](https://stack.nerc.mghpcc.org), choose the project for which you want to download the OpenStack RC file, and click **"Access & Security"**.
+- Log in to the [NERC's OpenStack dashboard](https://stack.nerc.mghpcc.org), choose the project for which you want to download the OpenStack RC file.
 
-- Click **"Download OpenStack RC File"** and save the file.
+- Navigate to **Identity > Application Credentials**.
+
+- Click on "Create Application Credential" button and provide a **Name** and **Roles** for the application credential. All other fields are optional and leaving the "Secret" field empty will set it to autogenerate (recommended).
+
+![Application Credentials Setup](images/openstack_cli_cred.png)
+
+- After clicking "Create Application Credential" button, the **ID** and **Secret** will be displayed and you will be prompted to `Download openrc file` or to Download `clouds.yaml`. Both of these are different methods of configuring the client for CLI access. Please save the file.
 
 Then, source your downloaded **OpenStack RC File**:
 
