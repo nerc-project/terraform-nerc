@@ -24,7 +24,7 @@ variable "keypair-name" {
 }
 
 variable "keypair-path" {
-  default     = "~/.ssh/id_rsa.pub"
+  default     = "~/.ssh/username-keypair.pub"
   description = "SSH Keypair PUBLIC key location - You can generate `ssh-keygen -t rsa -f outputname`"
 }
 
