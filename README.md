@@ -37,7 +37,7 @@ The basic setup is as follows:
 
 8. Apply the changes with `terraform apply --var-file=example.tfvars`.
 
-9. The terminal will show the Floating IP(s) of the newly creted instance(s). Try to SSH into it using `ssh ubuntu@<Flaoting_IP> -i ~/.ssh/your-private-key-pair-name`.
+9. The terminal will show the Floating IP(s) of the newly creted instance(s). Try to SSH into it using `ssh ubuntu@<Floating_IP> -i ~/.ssh/your-private-key-pair-name`.
 
 10. Go to the [NERC's OpenStack dashboard](https://stack.nerc.mghpcc.org) to review your newly provisioned resources.
 
@@ -52,15 +52,7 @@ You can download the environment file with the credentials from the OpenStack da
 
     2. Click **"Download OpenStack RC File"** and save the file.
 
-## How to Setup SSH key pairs
-
-Create a new key running: `ssh-keygen -t rsa -f username-keypair`
-
-Make sure the newly generated SSH key pairs exist on your `~/.ssh` folder.
-
-## Running Terraform
-
-* Source your downloaded OpenStack RC File:
+Then, source your downloaded **OpenStack RC File**:
 
 Find the file (by default it will be named the same as the application credential name with the suffix `-openrc.sh` where project is the name of your OpenStack project).
 
@@ -69,6 +61,14 @@ Source the file:
     [user@laptop ~]$ source app-cred-<Credential_Name>-openrc.sh
 
 **NOTE:** When you source the file, environment variables are set for your current shell.
+
+## How to Setup SSH key pairs
+
+Create a new key running: `ssh-keygen -t rsa -f username-keypair`
+
+Make sure the newly generated SSH key pairs exist on your `~/.ssh` folder.
+
+## Running Terraform
 
 ### Terraform Init
 
