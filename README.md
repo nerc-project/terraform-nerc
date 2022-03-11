@@ -1,4 +1,4 @@
-# How to use Terraform on NERC
+# Provisioning the NERC resources using Terraform
 
 This includes a basic template to provision and manage user's NERC OpenStack resources using Terraform.
 [NERC](https://stack.nerc.mghpcc.org) has an OpenStack deployment.
