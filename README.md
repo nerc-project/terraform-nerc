@@ -33,15 +33,15 @@ The basic setup is as follows:
 
 6. Initalize Terraform in the repo with `terraform init`.
 
-7. See what changes Terraform wants to make to your infrastructure with `terraform plan --var-file=example.tfvars`.
+7. See what changes Terraform wants to make to your infrastructure with `terraform plan -var-file="example.tfvars"`.
 
-8. Apply the changes with `terraform apply --var-file=example.tfvars`.
+8. Apply the changes with `terraform apply -var-file="example.tfvars"`.
 
 9. The terminal will show the Floating IP(s) of the newly creted instance(s). Try to SSH into it using `ssh ubuntu@<Floating_IP> -i ~/.ssh/your-private-key-pair-name`.
 
 10. Go to the [NERC's OpenStack dashboard](https://stack.nerc.mghpcc.org) to review your newly provisioned resources.
 
-11. Clean up all resources using `terraform destroy --var-file=example.tfvars`.
+11. Clean up all resources using `terraform destroy -var-file="example.tfvars"`.
 
 ## How to get Credential to connect NERC's OpenStack
 
@@ -74,6 +74,10 @@ Create a new key running: `ssh-keygen -t rsa -f username-keypair`
 Make sure the newly generated SSH key pairs exist on your `~/.ssh` folder.
 
 ## Running Terraform
+
+The Terraform deployment workflow on the NERC looks like this:
+
+[Automating NERC resources using Terraform](images/NERC-Terrform.png)
 
 ### Terraform Init
 
