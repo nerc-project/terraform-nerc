@@ -77,7 +77,7 @@ Make sure the newly generated SSH key pairs exist on your `~/.ssh` folder.
 
 The Terraform deployment workflow on the NERC looks like this:
 
-[Automating NERC resources using Terraform](images/NERC-Terrform.png)
+![Automating NERC resources using Terraform](images/NERC-Terrform.png)
 
 ### Terraform Init
 
