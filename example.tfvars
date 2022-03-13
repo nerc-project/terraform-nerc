@@ -8,7 +8,7 @@
 quantity = "1"
 
 image_name = "ubuntu-20.04-x86_64"
-image_id = "126a1c8a-1802-434f-bee3-c3b6c8def513"
+image_id   = "126a1c8a-1802-434f-bee3-c3b6c8def513"
 
 # VM Flavor: https://nerc-project.github.io/nerc-docs/openstack/create-and-connect-to-the-VM/flavors/
 # Availability depends upon your Quota i.e. vCPU / RAM / Disk, etc.

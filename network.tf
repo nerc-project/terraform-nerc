@@ -1,6 +1,6 @@
 # Create Security Group an Instance
 resource "openstack_networking_secgroup_v2" "secgroup_1" {
-  name        = "${var.secgroup}"
+  name        = var.secgroup
   description = "My security group"
 }
 
@@ -12,7 +12,7 @@ resource "openstack_networking_secgroup_rule_v2" "ssh-ingress" {
   port_range_min    = 22
   port_range_max    = 22
   remote_ip_prefix  = "0.0.0.0/0"
-  security_group_id = "${openstack_networking_secgroup_v2.secgroup_1.id}"
+  security_group_id = openstack_networking_secgroup_v2.secgroup_1.id
 }
 
 resource "openstack_compute_secgroup_v2" "secgroup_1" {
@@ -36,6 +36,6 @@ resource "openstack_compute_secgroup_v2" "secgroup_1" {
 
 # Create Floating IP for each instance
 resource "openstack_networking_floatingip_v2" "floatip_1" {
-  count = "${var.quantity}"
+  count = var.quantity
   pool  = "provider"
 }
