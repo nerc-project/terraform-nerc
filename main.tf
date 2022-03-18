@@ -20,7 +20,7 @@ resource "openstack_compute_instance_v2" "servers" {
   security_groups = ["${var.secgroup}"] # ["${openstack_compute_secgroup_v2.secgroup_1.name}"]
 
   network {
-    name = "default_network"
+    name = var.network_name
   }
 }
 

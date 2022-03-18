@@ -34,3 +34,8 @@ variable "secgroup" {
   default     = "username-ssh-only"
   description = "Name of Security Group created and applied to the VMs"
 }
+
+variable "network_name" {
+  default     = "default_network"
+  description = "Name of your Network"
+}

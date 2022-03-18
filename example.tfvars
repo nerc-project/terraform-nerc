@@ -21,3 +21,5 @@ keypair-path = "~/.ssh/milson-tf-key.pub"
 #  Network options
 
 secgroup = "milson-ssh-only"
+
+network_name = "default_network"
