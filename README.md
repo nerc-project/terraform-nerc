@@ -37,7 +37,7 @@ The basic setup is as follows:
 
 8. Apply the changes with `terraform apply -var-file="example.tfvars"`.
 
-9. The terminal will show the Floating IP(s) of the newly creted instance(s). Try to SSH into it using `ssh ubuntu@<Floating_IP> -i ~/.ssh/your-private-key-pair-name`.
+9. The terminal will show the Floating IP(s) of the newly creted instance(s). Try to SSH into it using `ssh ubuntu@<Floating_IP> -i ~/.ssh/your-private-key-pair.key`.
 
 10. Go to the [NERC's OpenStack dashboard](https://stack.nerc.mghpcc.org) to review your newly provisioned resources.
 

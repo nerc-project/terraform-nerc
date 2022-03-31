@@ -15,11 +15,11 @@ image_id   = "126a1c8a-1802-434f-bee3-c3b6c8def513"
 vm_flavor = "m1.medium"
 
 ##  SSH Keypair control
-keypair-name = "milson-keypair"
-keypair-path = "~/.ssh/milson-tf-key.pub"
+keypair-name = "your-key-pair-name"
+keypair-path = "~/.ssh/your-public-key-pair.key.pub"
 
 #  Network options
 
-secgroup = "milson-ssh-only"
+secgroup = "your-ssh-only-sec-group"
 
 network_name = "default_network"
