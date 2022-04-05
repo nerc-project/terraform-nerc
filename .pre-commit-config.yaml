@@ -1,0 +1,35 @@
+---
+repos:
+  - repo: https://github.com/Lucas-C/pre-commit-hooks
+    rev: v1.1.10
+    hooks:
+      - id: remove-tabs
+
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.0.1
+    hooks:
+      - id: trailing-whitespace
+      - id: check-merge-conflict
+      - id: end-of-file-fixer
+      - id: check-added-large-files
+      - id: check-case-conflict
+      - id: check-json
+      - id: check-yaml
+        args:
+          - '--allow-multiple-documents'
+      - id: check-symlinks
+      - id: detect-private-key
+
+  - repo: https://github.com/Yelp/detect-secrets
+    rev: v1.1.0
+    hooks:
+    - id: detect-secrets
+      args: ['--baseline', '.secrets.baseline']
+      exclude: .*/tests/.*
+  
+  # See https://pre-commit.com for more information
+  # See https://pre-commit.com/hooks.html for more hooks
+  - repo: https://github.com/antonbabenko/pre-commit-terraform
+    rev: v1.58.0 # Get the latest from: https://github.com/antonbabenko/pre-commit-terraform/releases
+    hooks:
+      - id: terraform_fmt
