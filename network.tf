@@ -15,24 +15,24 @@ resource "openstack_networking_secgroup_rule_v2" "ssh-ingress" {
   security_group_id = openstack_networking_secgroup_v2.secgroup_1.id
 }
 
-resource "openstack_compute_secgroup_v2" "secgroup_1" {
-  name        = "my_secgroup"
-  description = "My security group"
+# resource "openstack_compute_secgroup_v2" "secgroup_1" {
+#   name        = "my_secgroup"
+#   description = "My security group"
 
-  rule {
-    from_port   = 22
-    to_port     = 22
-    ip_protocol = "tcp"
-    cidr        = "0.0.0.0/0"
-  }
+#   rule {
+#     from_port   = 22
+#     to_port     = 22
+#     ip_protocol = "tcp"
+#     cidr        = "0.0.0.0/0"
+#   }
 
-  rule {
-    from_port   = 80
-    to_port     = 80
-    ip_protocol = "tcp"
-    cidr        = "0.0.0.0/0"
-  }
-}
+#   rule {
+#     from_port   = 80
+#     to_port     = 80
+#     ip_protocol = "tcp"
+#     cidr        = "0.0.0.0/0"
+#   }
+# }
 
 # Create Floating IP for each instance
 resource "openstack_networking_floatingip_v2" "floatip_1" {
