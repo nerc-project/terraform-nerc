@@ -14,7 +14,7 @@ resource "openstack_compute_instance_v2" "servers" {
   count      = var.quantity
   name       = "test-nerc-${count.index}"
   image_name = var.image_name
-  # image_id        = "126a1c8a-1802-434f-bee3-c3b6c8def513"
+  # image_id        = "8c87cf6f-32f9-4a4b-91a5-0d734b7c9770"
   flavor_name     = var.vm_flavor
   key_pair        = openstack_compute_keypair_v2.my-cloud-key.name
   security_groups = ["${var.secgroup}"] # ["${openstack_compute_secgroup_v2.secgroup_1.name}"]

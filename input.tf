@@ -9,7 +9,7 @@ variable "image_name" {
 }
 
 variable "image_id" {
-  default     = "126a1c8a-1802-434f-bee3-c3b6c8def513"
+  default     = "8c87cf6f-32f9-4a4b-91a5-0d734b7c9770"
   description = "Image ID of VM to start on NERC, look at the API images in Horizon"
 }
 

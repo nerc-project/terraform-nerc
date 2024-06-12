@@ -8,11 +8,11 @@
 quantity = "1"
 
 image_name = "ubuntu-20.04-x86_64"
-image_id   = "126a1c8a-1802-434f-bee3-c3b6c8def513"
+image_id   = "8c87cf6f-32f9-4a4b-91a5-0d734b7c9770"
 
 # VM Flavor: https://nerc-project.github.io/nerc-docs/openstack/create-and-connect-to-the-VM/flavors/
 # Availability depends upon your Quota i.e. vCPU / RAM / Disk, etc.
-vm_flavor = "cpu-a.2"
+vm_flavor = "cpu-su.2"
 
 ##  SSH Keypair control
 keypair-name = "your-key-pair-name"
