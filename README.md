@@ -37,7 +37,7 @@ The basic setup is as follows:
 
 8. Apply the changes with `terraform apply -var-file="example.tfvars"`.
 
-9. The terminal will show the Floating IP(s) of the newly creted instance(s). Try to SSH into it using `ssh ubuntu@<Floating_IP> -i ~/.ssh/your-private-key-pair.key`.
+9. The terminal will show the Floating IP(s) of the newly creted instance(s). Try to SSH into it using `ssh ubuntu@<Floating_IP> -i ./your-private-key-pair`.
 
 10. Go to the [NERC's OpenStack dashboard](https://stack.nerc.mghpcc.org) to review your newly provisioned resources.
 
@@ -69,7 +69,7 @@ Source the file:
 
 ## How to Setup SSH key pairs
 
-Create a new key running: `ssh-keygen -t rsa -f username-keypair`
+Create a new key running: `ssh-keygen -t rsa -f your-private-key-pair`
 
 Make sure the newly generated SSH key pairs exist on your `~/.ssh` folder.
 

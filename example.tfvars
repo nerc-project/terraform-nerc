@@ -15,8 +15,8 @@ image_id   = "8c87cf6f-32f9-4a4b-91a5-0d734b7c9770"
 vm_flavor = "cpu-su.2"
 
 ##  SSH Keypair control
-keypair-name = "your-key-pair-name"
-keypair-path = "~/.ssh/your-public-key-pair.key.pub"
+keypair-name = "your-private-key-pair"
+keypair-path = "./your-private-key-pair.pub"
 
 #  Network options
 
